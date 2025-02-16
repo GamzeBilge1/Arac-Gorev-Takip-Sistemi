@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataList"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/arkaplan"
+    >
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textborder"
+        android:hint="Ara..."
+        android:padding="12dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp" />
+
+    <LinearLayout
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ozelAracButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/icon_background_selector"
+            android:onClick="filterByOzelArac"
+            android:src="@drawable/baseline_drive_eta_24" />
+
+        <ImageButton
+            android:id="@+id/otobusButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/icon_background_selector"
+            android:onClick="filterByOtobus"
+            android:src="@drawable/baseline_directions_bus_24" />
+
+        <ImageButton
+            android:id="@+id/activeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_background_selector"
+            android:onClick="active"
+            android:src="@drawable/tick" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="334dp"
+        android:layout_height="420dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/white_background"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingHorizontal="10dp" />
+</LinearLayout>

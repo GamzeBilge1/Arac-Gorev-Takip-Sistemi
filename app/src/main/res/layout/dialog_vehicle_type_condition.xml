@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/vehicleTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/vehicleConditionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktif"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/inactiveRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasif"/>
+    </RadioGroup>
+</LinearLayout>
